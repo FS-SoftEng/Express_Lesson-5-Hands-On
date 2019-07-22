@@ -1,0 +1,25 @@
+
+
+<h1>Find Category and Default Price!</h1>
+
+<form action="/category" method="POST">
+    <div>
+        <label for="category">Category: </label>
+        <input type="text" name="name">
+    </div>
+
+    <div>
+        <label for="default_price">Default Price: </label>
+        <input type="text" name="default_price">
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<ul>
+{{#each categories}}
+    <li>{{name}} {{default_price}} </li>
+{{/each}}
+</ul>
